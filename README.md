@@ -9,6 +9,7 @@
 ## Requirements
 
 * PHP 7.4+
+* Vue
 * Laravel 8.0 and higher
 
 ## Support
@@ -16,6 +17,7 @@
 We proudly support the community by developing Laravel packages and giving them away for free. Keeping track of issues and pull requests takes time, but we're happy to help! If this package saves you time or if you're relying on it professionally, please consider [supporting the maintenance and development](https://github.com/sponsors/pascalbaljet).
 
 ## Blogpost
+
 
 
 ## Installation
@@ -26,7 +28,7 @@ You can install the package via composer:
 composer require protonemedia/inertiajs-events-laravel-dusk --dev
 ```
 
-Add to your main JavaScript file:
+Add the `inertiaEventsCount` object to your main JavaScript file, somewhere above the creation of the Vue application instance.
 
 ```js
 window.inertiaEventsCount = {
@@ -36,7 +38,7 @@ window.inertiaEventsCount = {
 }
 ```
 
-Vue instance:
+In the creation of the Vue application instance, register an [event listener](https://inertiajs.com/events) for each lifecycle.
 
 ```js
 new Vue({
@@ -58,10 +60,18 @@ new Vue({
 
 ## Usage
 
-Macros:
-`waitForInertiaNavigate()`
-`waitForInertiaError()`
-`waitForInertiaSuccess()`
+This package provides three helper methods for your Laravel Dusk tests.
+
+### Error
+The `waitForInertiaError()` method may be used to wait until the [Error](https://inertiajs.com/events#error) event is fired. You can use it to assert against responses where validation errors are returned.
+
+### Navigate
+The `waitForInertiaNavigate()` method may be use to until the [Navigate](https://inertiajs.com/events#navigate) event is fired. You can use it to assert a user is redirected, for example, after submitting a form.
+
+### Success
+The `waitForInertiaSuccess()` method may be used to wait until the [Success](https://inertiajs.com/events#success) event is fired. This is great for testing forms that don't redirect after a succesful submition.
+
+### Example test
 
 ```php
 <?php
