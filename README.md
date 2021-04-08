@@ -91,7 +91,7 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function test_basic_example()
+    public function it_can_store_a_user_and_redirect_back_to_the_index_route()
     {
         $this->browse(function ($browser) {
             $browser->loginAs(User::first())
