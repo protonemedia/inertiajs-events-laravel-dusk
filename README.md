@@ -95,12 +95,12 @@ class ExampleTest extends DuskTestCase
     {
         $this->browse(function ($browser) {
             $browser->loginAs(User::first())
-                    ->visit(route('applications.create'))
-                    ->type('name', 'New Application')
+                    ->visit(route('user.create'))
+                    ->type('name', 'New User')
                     ->press('Submit')
                     ->waitForInertiaNavigate()
-                    ->assertRouteIs('applications.index')
-                    ->assertSee('Application Created!');
+                    ->assertRouteIs('user.index')
+                    ->assertSee('User Added!');
         });
     }
 }
