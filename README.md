@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-events-laravel-dusk)
 ![run-tests](https://github.com/protonemedia/inertiajs-events-laravel-dusk/workflows/run-tests/badge.svg)
-[![Quality Score](https://img.shields.io/scrutinizer/g/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://scrutinizer-ci.com/g/protonemedia/inertiajs-events-laravel-dusk)
 [![Total Downloads](https://img.shields.io/packagist/dt/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-events-laravel-dusk)
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/protonemedia/inertiajs-events-laravel-dusk)
 
@@ -18,7 +17,7 @@ We proudly support the community by developing Laravel packages and giving them 
 
 ## Blogpost
 
-
+If you want to know more about the background of this package, please read the blogpost: [A package for Laravel Dusk to wait for Inertia.js events](https://protone.media/en/blog/a-package-for-laravel-dusk-to-wait-for-inertiajs-events)
 
 ## Installation
 
