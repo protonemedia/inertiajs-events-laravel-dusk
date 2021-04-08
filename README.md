@@ -38,7 +38,7 @@ window.inertiaEventsCount = {
 
 Vue instance:
 
-```vue
+```js
 new Vue({
   mounted() {
     Inertia.on('navigate', (event) => {
