@@ -40,34 +40,60 @@ Vue instance:
 
 ```vue
 new Vue({
-    mounted() {
-        Inertia.on('navigate', (event) => {
-            window.inertiaEventsCount.navigateCount++;
-        })
+  mounted() {
+    Inertia.on('navigate', (event) => {
+      window.inertiaEventsCount.navigateCount++;
+    })
 
-        Inertia.on('success', (event) => {
-            window.inertiaEventsCount.successCount++;
-        })
+    Inertia.on('success', (event) => {
+      window.inertiaEventsCount.successCount++;
+    })
 
-        Inertia.on('error', (event) => {
-            window.inertiaEventsCount.errorCount++;
-        })
-    }
+    Inertia.on('error', (event) => {
+      window.inertiaEventsCount.errorCount++;
+    })
+  }
 })
 ```
 
 ## Usage
 
+Macros:
+`waitForInertiaNavigate()`
+`waitForInertiaError()`
+`waitForInertiaSuccess()`
+
 ```php
-$this->browse(function (Browser $browser) use ($user, $newApplicationName) {
-    $browser->loginAs($user)
-        ->visit(route('applications.create'))
-        ->type('name', 'New Application')
-        ->click('Submit')
-        ->waitForInertiaNavigate()
-        ->assertRouteIs('applications.index')
-        ->assertSee('Application Created!');
-});
+<?php
+
+namespace Tests\Browser;
+
+use App\Models\User;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\DuskTestCase;
+
+class ExampleTest extends DuskTestCase
+{
+    use DatabaseMigrations;
+
+    /**
+     * A basic browser test example.
+     *
+     * @return void
+     */
+    public function test_basic_example()
+    {
+        $this->browse(function ($browser) {
+            $browser->loginAs(User::first())
+                    ->visit(route('applications.create'))
+                    ->type('name', 'New Application')
+                    ->press('Submit')
+                    ->waitForInertiaNavigate()
+                    ->assertRouteIs('applications.index')
+                    ->assertSee('Application Created!');
+        });
+    }
+}
 ```
 
 ### Testing
