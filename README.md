@@ -1,12 +1,10 @@
-# Laravel Eloquent Where Not
+# Inertia.js Events for Laravel Dusk
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-events-laravel-dusk)
 ![run-tests](https://github.com/protonemedia/inertiajs-events-laravel-dusk/workflows/run-tests/badge.svg)
 [![Quality Score](https://img.shields.io/scrutinizer/g/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://scrutinizer-ci.com/g/protonemedia/inertiajs-events-laravel-dusk)
 [![Total Downloads](https://img.shields.io/packagist/dt/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-events-laravel-dusk)
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/protonemedia/inertiajs-events-laravel-dusk)
-
-### 📺 Want to see this package in action? Join the live stream on December 10 at 13:30 CET: [https://youtu.be/fAY75SLQj3w](https://youtu.be/fAY75SLQj3w)
 
 ## Requirements
 
@@ -25,7 +23,7 @@ We proudly support the community by developing Laravel packages and giving them 
 You can install the package via composer:
 
 ```bash
-composer require protonemedia/inertiajs-events-laravel-dusk
+composer require protonemedia/inertiajs-events-laravel-dusk --dev
 ```
 
 Add to your main JavaScript file:
