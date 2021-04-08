@@ -18,7 +18,7 @@ We proudly support the community by developing Laravel packages and giving them 
 
 ## Blogpost
 
-
+If you want to know more about the background of this package, please read the blogpost: [A package for Laravel Dusk to wait for Inertia.js events](https://protone.media/en/blog/a-package-for-laravel-dusk-to-wait-for-inertiajs-events)
 
 ## Installation
 
