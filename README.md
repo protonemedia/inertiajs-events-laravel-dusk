@@ -38,7 +38,7 @@ window.inertiaEventsCount = {
 }
 ```
 
-In the creation of the Vue application instance, register an [event listener](https://inertiajs.com/events) for each lifecycle.
+In the creation of the Vue application instance, use the `mounted` method to register the [event listeners](https://inertiajs.com/events).
 
 ```js
 new Vue({
@@ -66,10 +66,10 @@ This package provides three helper methods for your Laravel Dusk tests.
 The `waitForInertiaError()` method may be used to wait until the [Error](https://inertiajs.com/events#error) event is fired. You can use it to assert against responses where validation errors are returned.
 
 ### Navigate
-The `waitForInertiaNavigate()` method may be use to until the [Navigate](https://inertiajs.com/events#navigate) event is fired. You can use it to assert a user is redirected, for example, after submitting a form.
+The `waitForInertiaNavigate()` method may be used to wait until the [Navigate](https://inertiajs.com/events#navigate) event is fired. You can use it to assert a user is redirected, for example, after submitting a form.
 
 ### Success
-The `waitForInertiaSuccess()` method may be used to wait until the [Success](https://inertiajs.com/events#success) event is fired. This is great for testing forms that don't redirect after a succesful submition.
+The `waitForInertiaSuccess()` method may be used to wait until the [Success](https://inertiajs.com/events#success) event is fired. This is great for testing forms that don't redirect after successfully submitting a form.
 
 ### Example test
 
