@@ -40,6 +40,8 @@ window.inertiaEventsCount = {
 In the creation of the Vue application instance, use the `mounted` method to register the [event listeners](https://inertiajs.com/events).
 
 ```js
+import { Inertia } from '@inertiajs/inertia'
+
 new Vue({
   mounted() {
     Inertia.on('navigate', (event) => {
