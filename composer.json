@@ -23,12 +23,12 @@
     ],
     "require": {
         "php": "^7.4|^8.0|^8.1",
-        "illuminate/support": "^8.67",
+        "illuminate/support": "^8.67||^9.0",
         "laravel/dusk": "^6.15"
     },
     "require-dev": {
         "mockery/mockery": "^1.3.3",
-        "orchestra/testbench": "^6.23",
+        "orchestra/testbench": "^6.23||^7.0",
         "phpunit/phpunit": "^9.4"
     },
     "autoload": {
