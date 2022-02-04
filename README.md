@@ -9,7 +9,7 @@
 
 * PHP 7.4+
 * Vue
-* Laravel 8.0 and higher
+* Laravel 8.0 and 9.0
 
 ## Support
 
