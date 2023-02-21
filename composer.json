@@ -24,7 +24,8 @@
     "require": {
         "php": "^8.1|^8.2",
         "illuminate/support": "^9.0|^10.0",
-        "laravel/dusk": "^6.15|^7.0"
+        "laravel/dusk": "^6.15|^7.0",
+        "nesbot/carbon": "^2.66"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.4",
