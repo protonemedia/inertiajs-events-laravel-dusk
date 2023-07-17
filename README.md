@@ -1,3 +1,5 @@
+## _Warning_: Like the [Tables package](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/issues/122), I've decided to archive this repository as I've moved away from Inertia.js to focus on [Splade](https://splade.dev) and [Eddy](https://eddy.management) 🔥
+
 # Inertia.js Events for Laravel Dusk
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/inertiajs-events-laravel-dusk.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-events-laravel-dusk)
